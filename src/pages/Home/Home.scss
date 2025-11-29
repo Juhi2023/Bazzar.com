@@ -1,0 +1,248 @@
+.home-container{
+    button{
+        outline: none;
+        border: none;
+    }
+
+    .carousel-bg{
+        width: 100%;
+        min-height: 650px;
+        background: linear-gradient(rgba(15, 23, 43, .5), rgba(15, 23, 43, .5)), url("../../assets/images/hero.jpg");
+        //background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    
+        .carousel-container{
+            color: white;
+            padding: 40px 20px;
+            
+            
+            .first-heading{
+                font-size: 40px;
+                font-weight: 800;
+                font-family: Roboto,Arial,sans-serif;        
+            }
+            .second-heading{
+                color: #3deefb;
+    
+                font-size: 55px;
+                font-weight: 800;
+                font-family: Roboto,Arial,sans-serif;        
+            }
+    
+            @media screen and (max-width: 500px) {
+                .first-heading{
+                    font-size: 35px;      
+                }
+                .second-heading{    
+                    font-size: 40px;  
+                }
+            }
+    
+            .content{
+                font-size: 20px;
+            }
+    
+            .carousel-indicators {
+                bottom: -50px;
+            }
+        }
+    }
+
+    .shop{
+        margin-top: 60px;
+        padding: 10px;
+        font-weight: 600;
+        background-color: transparent;
+        border: 3px solid white;
+        border-radius: 3px;
+        color: white;
+        text-transform: uppercase;
+        transition: all ease 0.5s;
+
+        &:hover{
+            background-color: white;
+            color: #12257c;
+            font-weight: 700;
+        }
+    }
+    
+    
+    .service-box{
+        .service-item{
+            padding: 10px;
+            .icon{
+                font-size: 40px;
+                display: flex;
+                transition: all .3s ease 0s;
+            }
+
+            .heading{
+                font-weight: 800;
+                font-size: 18px;
+                font-family: Roboto,Arial,sans-serif;
+            }
+
+            .description{
+                font-size: 14px;
+            }
+
+            &:hover{
+                .animated { 
+                    -webkit-animation-duration: 1s;
+                    animation-duration: 1s; 
+                    -webkit-animation-fill-mode: both; 
+                    animation-fill-mode: both; 
+                    -webkit-animation-name: tada; 
+                    animation-name: tada; 
+                 }
+            }
+        
+        }
+    }
+
+    .heading{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+    .category-box{
+        margin-top: 20px;
+        overflow: scroll;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        .category-item{
+            width: 170px;
+            background-color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all ease 1s;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid #F4F4F6;
+            margin: 0 5px 0 0;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: end;
+
+            .img-container{
+                height: 160px;
+                width: 100%;
+                text-align: center;
+                position: relative;
+
+                img{
+                    opacity: 0.9;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    max-width: 100%;
+                    max-height: 100%;
+                    transition: opacity .5s linear;
+                    opacity: 1;
+                    margin: auto;
+                    z-index: 0;
+                    filter: blur(0.5px);
+                }
+            }
+
+            .description{
+                text-align: center;
+                font-size: 14px;
+                font-weight: 500;
+                padding: 10px;
+                border-radius: 3px;
+                margin: auto;
+
+                .details{
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        
+            &:hover{
+                transform: scale(0.95);
+            }
+        
+            @media screen and (max-width: 1150px) {
+                width: 33.3%;
+                margin: 0;
+            }
+        
+            @media screen and (max-width: 650px) {
+                width: 50%;
+                margin: 0;
+            }
+        }
+    }
+
+    .banner{
+        height: 500px;
+        width: 100%; 
+        background-color: #e2f0ff;
+        // background-image: linear-gradient(315deg, #d7eafd 0%, #f4eafe 74%);
+        margin: 50px 0;
+
+        .content{
+            width: 500px;
+            text-align: center;
+            margin-left: 50px;
+
+            @media screen and (max-width: 769px) {
+                margin-left: 0;
+            }
+
+            .title{
+                font-size: 25px;
+                font-weight: 700;
+                color: #06101E;
+            }
+
+            .shop{
+                margin-top: 60px;
+                padding: 10px;
+                font-weight: 600;
+                background-color: transparent;
+                border: 3px solid #12257c;
+                border-radius: 3px;
+                color: #12257c;
+                text-transform: uppercase;
+                transition: all ease 0.5s;
+        
+                &:hover{
+                    background-color: #12257c;
+                    color: white;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+     
+     @-webkit-keyframes tada { 
+        0% {-webkit-transform: scale(1);}
+        10%, 20% {-webkit-transform: scale(0.9) rotate(-3deg);} 
+        30%, 50%, 70%, 90% {-webkit-transform: scale(1.1) rotate(3deg);}
+        40%, 60%, 80% {-webkit-transform: scale(1.1) rotate(-3deg);} 
+        100% {-webkit-transform: scale(1) rotate(0);} 
+     }
+     
+     @keyframes tada { 
+        0% {transform: scale(1);} 
+        10%, 20% {transform: scale(0.9) rotate(-3deg);} 
+        30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);} 
+        40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);} 
+        100% {transform: scale(1) rotate(0);}
+     }
+}

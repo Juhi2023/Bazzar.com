@@ -1,0 +1,28 @@
+#footer{
+    background-color: #06101e;
+    margin-top: 10px;
+
+    .box{
+        padding: 35px 0;
+    }
+
+    .heading{
+        font-weight: 600;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 13px;
+    }
+
+    .heading.logo{
+        font-size: 30px;
+        text-transform:none !important;
+        font-family: Roboto,Arial,sans-serif;
+        font-weight: 800;
+    }
+
+    .content{
+        color: #BEC3B2;
+        line-height: 30px;
+        font-size: 14px;
+    }
+}

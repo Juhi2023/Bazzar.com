@@ -1,0 +1,103 @@
+.product-box{
+    width: 16%;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease 1s;
+    border: 2px solid #F4F4F6;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    &:hover{
+        transform: scale(0.95);
+    }
+
+    @media screen and (max-width: 1500px) {
+        width: 24.3%;
+    }
+
+    @media screen and (max-width: 998px) {
+        width: 32.6%;
+    }
+
+    @media screen and (max-width: 752px) {
+        width: 48.2%;
+    }
+
+    .img{
+        height: 200px;
+        position: relative;
+        padding: 10px;
+    
+        @media screen and (max-width: 520px) {
+            height: 160px;
+        }
+
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            max-width: 100%;
+            max-height: 100%;
+            transition: opacity .5s linear;
+            opacity: 1;
+            margin: auto;
+            z-index: 0;
+        }
+
+        
+    }
+    
+    .content{
+        font-size: 14px;
+        padding: 15px 10px 10px;
+        .name{
+            font-weight: 600;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .description{
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 13px;
+            color: rgb(175, 175, 175);
+        }
+
+        .reviews{
+            color: blueviolet;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .offer{
+            font-weight: 600;
+            font-size: 12px;
+            color: green;
+        }
+
+        .price{
+            font-weight: 600;
+            font-size: 15px;
+            
+        }
+
+        .rating{
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            background-color: rgb(11, 143, 24);
+            color: white;
+            border-radius: 2px;
+            padding: 0 5px;
+            font-size: 13px;
+            width: fit-content;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+    }
+}

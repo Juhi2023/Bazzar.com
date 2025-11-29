@@ -1,0 +1,96 @@
+.verification-container{
+    background-color: aliceblue;
+    min-height: calc(100% - 72px);
+    margin-top: 40px;
+
+    .verification-form{
+        width: 400px;
+        font-size: 14px;
+
+        @media screen and (max-width: 450px) {
+            width: 95%;
+        }
+
+        .top-section{
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            background-image: linear-gradient(90deg, aliceblue 0%, #ffffff 75%);
+            text-align: right;
+
+            img{
+                height: 100%;
+            }
+        }
+        .form{
+            padding: 20px;
+            background-color: white;
+
+            .form-text{
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
+            
+            .heading{
+                font-weight: 700;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            .input-box{
+                width: 100%;
+                outline: none;
+                padding: 5px;
+                margin-bottom: 20px;
+                display: flex;
+                font-size: 14.5px;
+                justify-content: center;
+                
+
+                input{
+                    width: 40px !important;
+                    height: 40px;
+                    background-color: aliceblue;
+                    border-radius: 10px;
+                    border: 1px solid #DDDDDD;
+                    margin: 5px;
+                    font-weight: 600;
+            
+                    &:focus{
+                        border: 0.5px solid #31c3e8 !important;
+                        outline: none;
+                    }
+                }
+
+                img{
+                    cursor: pointer;
+                }
+
+                .country-code{
+                    border-right: 0.5px solid rgb(233, 233, 233);
+                    padding-right: 10px;
+                    margin-right: 10px;
+                }
+            }
+
+            .submit-btn{
+                button{
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    background-color: #31c3e8;            
+                    color: white;
+                    font-size: 15px;
+                    font-weight: 600;
+                    padding: 8px 0;
+                }
+            }
+        }
+
+        a{
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,1 @@
+export const REACT_APP_ENCRYPTION_KEY = "BaZar.COm25980"

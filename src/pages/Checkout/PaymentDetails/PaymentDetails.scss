@@ -1,0 +1,171 @@
+.payment-details{
+    .heading{
+        font-size: 17px;
+        font-weight: 600;
+        color: gray;
+        margin-bottom: 20px;
+
+        .edit-btn{
+            font-size: 15px;
+            font-weight: 500;
+            color: #0c89c4;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            margin-left: 15px;
+        }
+    }
+
+    .payment-form{
+        width: fit-content;
+        @media screen and (max-width: 576px) {
+            width: 100%;
+        }
+    }
+
+    .content{
+        width: fit-content;
+
+        .field{
+            margin-top: 8px;
+            .field-name{
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 4px;
+            }
+
+            .tel-input{
+                font-size: 15px;
+                width: 500px;
+                border-radius: 3px;
+                border: 1px solid #cfcfcf;
+                background-color: #fafafa;
+
+                @media screen and (max-width: 576px) {
+                    width: 100%;
+                }
+
+                &:has(input:focus){
+                    border-color: #0C8BC4;
+                }
+
+                input{
+                    border: none;                
+                    width: 500px;
+
+                    @media screen and (max-width: 576px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .paymentInput{
+                font-size: 15px;
+                width: 500px;
+                border-radius: 3px;
+                padding: 8px;
+                border: 1px solid #cfcfcf;
+                background-color: #fafafa;
+
+                &:focus{
+                    border-color: #0C8BC4;
+                }
+
+                @media screen and (max-width: 576px) {
+                    width: 100%;
+                }
+            }
+
+            .date-input{
+                .react-datepicker-wrapper{
+                    width: 500px;
+                    @media screen and (max-width: 576px) {
+                        width: 100%;
+                    }
+                }
+
+                .react-datepicker__input-container{
+                    display: flex !important;
+                    flex-direction: row-reverse;
+                    align-items: center;
+
+                    input{
+                        padding: 8px;
+                    }
+                }
+
+                .react-datepicker-popper{
+                    margin: 10px 0;
+                    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+                    border-radius: 4px;
+                    background-color: white;
+
+                    .react-datepicker__triangle {
+                        display: none;
+                    }
+
+                    .react-datepicker__navigation{
+                        top: 23px
+                    }
+
+                    .react-datepicker__month-container{
+                        padding: 20px;
+                    }
+
+                    .react-datepicker, .react-datepicker__header{
+                        font-size: 16px;
+                        background-color: white;
+                        border: none;
+                    }
+
+                    .react-datepicker__month-text{
+                        font-weight: 500;
+                        font-size: 15px;
+                        color: #707070;
+                        padding: 5px;
+                        margin: 3px;
+                    }
+
+                    .react-datepicker__month-text--disabled{
+                        color: rgb(204, 204, 204);
+                    }
+
+                    .react-datepicker__navigation-icon::before{
+                        border-color: #707070;
+                    }
+
+                    .react-datepicker__month-text--keyboard-selected{
+                        background-color: #0C8BC4;
+                        color: white;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+
+        .error{
+            color: red;
+            font-size: 11px;
+            height: 11px;
+        }
+
+        
+    }
+
+    .save-btn{
+        margin-right: 0;
+        background-color: #0c89c4;
+        width: 150px;
+        margin-top: 20px;
+        color: white;
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        &:disabled{
+            opacity: 0.4;
+        }
+    }
+}

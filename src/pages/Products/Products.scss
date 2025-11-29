@@ -1,0 +1,33 @@
+.products-page-container{
+    min-height: calc(100vh - 70px);
+
+    @media screen and (max-width: 1500px) {
+        min-height: calc(100vh - 150px);
+    }
+
+    .filter-products-container{
+        @media screen and (max-width: 1500px) {
+            flex-direction: column !important;
+            min-height: inherit;
+        }
+    }
+
+    .products-box-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: calc(1530px - 300px);
+
+        @media screen and (max-width: 1500px) {
+            width: 100%;
+            min-height: inherit;
+        }
+
+        .products-box{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 5px 5px;
+            
+        }
+    }
+}

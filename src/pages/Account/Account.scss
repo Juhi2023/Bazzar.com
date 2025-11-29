@@ -1,0 +1,61 @@
+.account-box{
+    min-height: 80vh;
+    .heading{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .account-container{
+        display: flex;
+        flex-wrap: wrap;
+    
+        .account-item{
+            font-size: 14px;
+            height: fit-content;
+            font-weight: 500;
+            cursor: pointer;
+            width: 300px;
+            border: 0.5px solid rgb(204, 204, 204);
+            border-radius: 3px;
+            padding: 10px;
+            margin: 5px 5px 5px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            .arrow{
+                display: none;
+            }
+    
+            .heading{
+                font-size: 15px;            
+                color: black;
+            }
+    
+            .text{
+                color: #aaaaaa;
+            }
+        }
+    
+        .logout{
+            display: none;
+        }
+    
+        @media screen and (max-width: 992px) {
+            flex-wrap: nowrap;
+            flex-direction: column;
+    
+            .account-item{
+                width: 100%;
+    
+                .arrow{
+                    display: block;
+                }
+            }
+    
+            .logout{
+                display: block;
+            }
+        }
+    }
+}

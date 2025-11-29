@@ -1,0 +1,17 @@
+.search{
+    min-width: 200px;
+    border-radius: 1.5px;
+    background-color: white;
+    margin: 130px 0 100px;
+    padding: 3px;
+    display: flex;
+
+    input{
+        outline: none;
+        border: none;
+        width: 100%;
+    }
+    span{
+        cursor: pointer;
+    }
+}

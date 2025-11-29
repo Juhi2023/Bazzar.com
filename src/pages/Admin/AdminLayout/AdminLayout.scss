@@ -1,0 +1,30 @@
+/* AdminLayout.scss */
+.admin-layout {
+    display: flex;
+  
+    main {
+      flex: 1;
+      min-height: 100vh;
+      transition: margin-left 0.3s ease;
+    }
+
+    .openner{
+      display: none;
+      @media (max-width: 768px) {
+          display: inline-block;
+      }
+    }
+  
+    &.sidebar-open {
+      main {
+        margin-left: 280px; // same as sidebar width
+      }
+    }
+  
+    @media (max-width: 768px) {
+      main {
+        margin-left: 0 !important; // no shifting on mobile
+      }
+    }
+  }
+  

@@ -1,0 +1,63 @@
+.login-container{
+    background-color: #f4f4f4;
+    min-height: calc(100% - 60px);
+    padding-top: 30px;
+
+    .login-signup-form{
+        width: 400px;
+
+        @media screen and (max-width: 450px) {
+            width: 95%;
+        }
+
+        .top-section{
+            width: 100%;
+            height: 100px;
+            // background-image: linear-gradient(90deg, aliceblue 0%, #ffffff 75%);
+            text-align: right;
+
+            img{
+                height: 100%;
+            } 
+        }
+        .form{
+            padding: 20px;
+            background-color: white;
+            
+            .heading{
+                font-weight: 700;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            .terms-and-conditions, .change-form{
+                font-size: 12.5px;
+                margin-bottom: 20px;
+                color: #AAAAAA;
+
+                a{
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+            }
+
+            .submit-btn{
+                button{
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    background-color: #31c3e8;            
+                    color: white;
+                    font-size: 15px;
+                    font-weight: 600;
+                    padding: 8px 0;
+                    border-radius: 5px;
+
+                    &:disabled{
+                        opacity: 0.4;
+                    }
+                }
+            }
+        }
+    }
+}
