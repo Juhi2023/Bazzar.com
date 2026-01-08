@@ -3,7 +3,6 @@ const app = express()
 const cookieParser = require('cookie-parser');
 const admin = require("firebase-admin");
 const { getStorage } = require("firebase-admin/storage");
-var serviceAccount = require("../serviceAccountKey.json");
 const errorMiddleware = require("./middlewares/error")
 const crypto = require('./middlewares/crypto');
 const productRoutes = require("./routes/productRoutes")
