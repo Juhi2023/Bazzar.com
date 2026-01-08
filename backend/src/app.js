@@ -23,7 +23,7 @@ app.use(cors({ origin: ['http://localhost:3000', 'http://localhost:3001', proces
 
 //firebase setup
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+  credential: admin.credential.cert(JSON.parse(process.env.SERVICE_ACCOUNT_KEY)),
   storageBucket: process.env.STORAGE_BUCKET
 });
 
