@@ -11,6 +11,7 @@ const orderRoutes = require("./routes/orderRoutes")
 const categoryRoutes = require("./routes/categoryRoutes")
 const cartRoutes = require("./routes/cartRoutes")
 const paymentRoutes = require("./routes/paymentRoutes")
+const serviceAccount = require("../serviceAccountKey.json")
 const cors = require('cors')
 const compression=require('compression')
 
@@ -22,7 +23,7 @@ app.use(cors({ origin: ['http://localhost:3000', 'http://localhost:3001', proces
 
 //firebase setup
 admin.initializeApp({
-  credential: admin.credential.cert(JSON.parse(process.env.SERVICE_ACCOUNT_KEY)),
+  credential: admin.credential.cert(serviceAccount),
   storageBucket: process.env.STORAGE_BUCKET
 });
 
